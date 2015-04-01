@@ -8,4 +8,4 @@ ADD nginx.conf /etc/nginx/
 
 EXPOSE 80
 
-ENTRYPOINT service nginx start
+ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
