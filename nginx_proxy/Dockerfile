@@ -8,4 +8,6 @@ ADD nginx.conf /etc/nginx/
 
 EXPOSE 80
 
+VOLUME ["/var/log/nginx"]
+
 ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
