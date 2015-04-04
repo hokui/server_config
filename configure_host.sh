@@ -11,6 +11,9 @@ mkdir -p /var/log/hokui/app/nginx
 mkdir -p /var/log/hokui/app/rails
 mkdir -p /var/log/hokui/mailing_list/rails
 
+mkdir -p /var/data/hokui/db
+mkdir -p /var/data/hokui/files
+
 cd ~
 mkdir -p src/github.com/hokui
 cd src/github.com/hokui
