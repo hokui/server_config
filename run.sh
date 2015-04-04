@@ -20,7 +20,7 @@ docker kill $(docker ps -q)
 docker ps -a | grep hokui_data_production
 if [ "$?" -eq 0 ]
 then
-  # do nothing
+  echo 'hokui_data_production already exists'
 else
   docker create -v /var/data/hokui --name hokui_data_production busybox
 fi
