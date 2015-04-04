@@ -28,6 +28,7 @@ cd /var/config/hokui/app
 touch application.yml
 touch database.yml
 touch secrets.yml
+touch production.rb
 
 cd /var/config/hokui/mailing_list
 touch application.yml

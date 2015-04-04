@@ -8,6 +8,7 @@ docker build -t hokui/ruby_nginx_base ./ruby_nginx_base
 cd ~/src/github.com/hokui/hokui.net
 git pull origin master
 cp /var/config/hokui/app/*.yml config
+cp /var/config/hokui/app/production.rb config/environments
 docker build -t hokui/app .
 
 cd ~/src/github.com/hokui/mailing_list
