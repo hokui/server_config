@@ -1,9 +1,9 @@
 #! /bin/bash
 
+sudo apt-get -y install git-core curl
+
 curl -s https://get.docker.io/ubuntu/ | sudo sh
 sudo gpasswd -a hokui docker
-
-sudo apt-get -y install git-core
 
 sudo mkdir -p /var/log/hokui
 sudo mkdir -p /var/data/hokui
