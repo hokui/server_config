@@ -5,6 +5,13 @@ sudo gpasswd -a hokui docker
 
 sudo apt-get -y install git-core
 
+sudo mkdir -p /var/log/hokui
+sudo mkdir -p /var/data/hokui
+sudo mkdir -p /var/config/hokui
+sudo chown hokui:hokui /var/log/hokui
+sudo chown hokui:hokui /var/data/hokui
+sudo chown hokui:hokui /var/config/hokui
+
 mkdir -p /var/log/hokui/nginx_proxy/nginx
 mkdir -p /var/log/hokui/app/supervisor
 mkdir -p /var/log/hokui/app/nginx
